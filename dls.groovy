@@ -14,7 +14,7 @@ job('NodeJS example') {
     }
     steps {
         dockerBuildAndPublish {
-                    repositoryName('macmist/nodejs-test')
+                    repositoryName('macmist/react-app')
                     tag('${GIT_REVISION,length=9}')
                     registryCredentials('dockerhub')
                     forcePull(false)
